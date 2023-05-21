@@ -67,16 +67,17 @@ export function Exercise() {
   //   }
   // }
 
-  switch (x) {
-    case 5:
-      console.log('5!');
-      break;
-    case 6:
-      console.log('6!');
-      break;
-    default:
-      console.log('inna wartość');
-  }
+  // SWITCH
+  // switch (x) {
+  //   case 5:
+  //     console.log('5!');
+  //     break;
+  //   case 6:
+  //     console.log('6!');
+  //     break;
+  //   default:
+  //     console.log('inna wartość');
+  // }
 
   return (
     <>
