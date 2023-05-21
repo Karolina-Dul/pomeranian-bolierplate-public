@@ -13,6 +13,8 @@ export function Exercise() {
   //Math.random()
   //Math.min()
   //Math.max()
+  //parseInt()
+  //parseFloat()
 
   return <div>Numery</div>;
 }
