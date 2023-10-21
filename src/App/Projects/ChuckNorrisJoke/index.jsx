@@ -1,8 +1,22 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ChuckNorrisJokeApp from './ChuckNorrisJokeApp';
+import './ChuckNorrisJokeApp.css';
+import chuckNorris from '../../Images/projects/chuckNorris.png';
 
 const ChuckNorrisJoke = () => {
+  const [joke, setJoke] = useState('There it no joke yet.');
+  const [count, setCount] = useState(0);
+
+  const date = new Date();
+
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+
+  const handleClick = (count) => {
+    setCount(count + 1);
+  };
   return (
     <div>
       <div className="page-path">
@@ -12,8 +26,14 @@ const ChuckNorrisJoke = () => {
         <p>&nbsp;&gt;&nbsp;Żart Norrisa</p>
       </div>
       <h1>Losowy żart Chucka Norrisa</h1>
-      <img src="https://static.wikia.nocookie.net/banialukipl/images/d/dd/C74461ae2a9917a2482ac7b53f195b3c6e2fdd59e778c673256fb29d1b07f181.jpg/revision/latest?cb=20180122200051&path-prefix=pl" />
-      <ChuckNorrisJokeApp />
+      <div className="chuck-norris-container">
+        <img className="chuck-norris-photo" src={chuckNorris} />
+        <div className="date-joke-button-container">
+          <p className="date">{`Current date: ${day}-${month}-${year}`}</p>
+          <ChuckNorrisJokeApp joke={joke} setJoke={setJoke} count={count} />
+          <button onClick={() => handleClick(count)}>Get new joke</button>
+        </div>
+      </div>
     </div>
   );
 };

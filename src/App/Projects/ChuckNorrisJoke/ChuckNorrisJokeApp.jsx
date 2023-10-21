@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 const API_URL = 'https://api.chucknorris.io/jokes/random';
 
-const ChuckNorrisJokeApp = () => {
-  const [joke, setJoke] = useState('There it no joke yet.');
+const ChuckNorrisJokeApp = ({ joke, setJoke, count }) => {
   useEffect(() => {
     const generateJoke = async () => {
       try {
@@ -25,9 +24,9 @@ const ChuckNorrisJokeApp = () => {
     };
 
     generateJoke();
-  }, []);
+  }, [count]);
 
-  return <div>{joke}</div>;
+  return <div className="chuck-norris-joke">{joke}</div>;
 };
 
 export default ChuckNorrisJokeApp;

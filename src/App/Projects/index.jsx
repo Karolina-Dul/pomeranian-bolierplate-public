@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Math } from '../Components/Icons/Projects/Math';
 import { Background } from '../Components/Icons/Projects/Background';
+import { Server } from '../Components/Icons/Projects/Server';
+import { Happy } from '../Components/Icons/Projects/Happy';
 import './Projects.css';
 
 export const Projects = () => {
@@ -35,20 +37,18 @@ export const Projects = () => {
         <div>
           <p className="project-tile-title">Łączenie z serwerem</p>
           <div className="project-tile-image">
-            <Background />
+            <Server />
           </div>
           <p className="project-tile-description">Pobiera dane z serwera</p>
           <Link to="/projects/api-request">Zobacz projekt</Link>
         </div>
 
         <div>
-          <p className="project-tile-title">Żart Norrisa</p>
+          <p className="project-tile-title">Żart Chucka Norrisa</p>
           <div className="project-tile-image">
-            <Background />
+            <Happy />
           </div>
-          <p className="project-tile-description">
-            Generuje losowy żart Chucka Norrisa
-          </p>
+          <p className="project-tile-description">Generuje losowy żart</p>
           <Link to="/projects/chuck-norris-joke">Zobacz projekt</Link>
         </div>
       </div>
