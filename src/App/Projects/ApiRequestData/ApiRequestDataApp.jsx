@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export const ApiRequestDataApp = ({ API_URL, endOfUrl }) => {
+export const ApiRequestDataApp = ({ API_URL }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {

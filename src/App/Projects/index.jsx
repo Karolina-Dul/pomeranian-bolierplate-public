@@ -40,6 +40,17 @@ export const Projects = () => {
           <p className="project-tile-description">Pobiera dane z serwera</p>
           <Link to="/projects/api-request">Zobacz projekt</Link>
         </div>
+
+        <div>
+          <p className="project-tile-title">Żart Norrisa</p>
+          <div className="project-tile-image">
+            <Background />
+          </div>
+          <p className="project-tile-description">
+            Generuje losowy żart Chucka Norrisa
+          </p>
+          <Link to="/projects/chuck-norris-joke">Zobacz projekt</Link>
+        </div>
       </div>
     </div>
   );

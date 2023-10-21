@@ -12,6 +12,7 @@ import { Projects } from './App/Projects';
 import { Calculator } from './App/Projects/Calculator/index';
 import { ChangeBackgroundColor } from './App/Projects/ChangeBackgroundColor/index';
 import { ApiRequestData } from './App/Projects/ApiRequestData/index';
+import ChuckNorrisJoke from './App/Projects/ChuckNorrisJoke/index';
 // import { Calendar } from './App/Calendar';
 // import { Settings } from './App/Settings';
 import { FaQ } from './App/FAQ';
@@ -33,6 +34,10 @@ export function App() {
             element={<ChangeBackgroundColor />}
           />
           <Route path="projects/api-request" element={<ApiRequestData />} />
+          <Route
+            path="projects/chuck-norris-joke"
+            element={<ChuckNorrisJoke />}
+          />
           <Route path="tech-stack*" element={<TechStack />} />
           <Route path="faq/*" element={<FaQ />} />
           <Route path="about-me/*" element={<FaQ />} />
