@@ -1,0 +1,48 @@
+.chuck-norris-photo {
+  width: 12vw;
+  height: auto;
+}
+
+.chuck-norris-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh;
+}
+
+.date-joke-button-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  padding: 2vh;
+  background-color: rgb(184, 184, 184);
+  width: 500px;
+  position: relative;
+}
+
+.date-joke-button-container > button {
+  position: absolute;
+  bottom: 2vh;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.date-joke-button-container > button:hover {
+  box-shadow: 0 4px 6px 0 var(--color-red);
+}
+
+.chuck-norris-joke {
+  height: 10vh;
+  overflow: auto;
+}
+
+.date {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: black;
+}
