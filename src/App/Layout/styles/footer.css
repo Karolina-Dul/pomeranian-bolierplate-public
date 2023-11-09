@@ -26,3 +26,14 @@ footer a {
   width: 100%;
   display: block;
 }
+
+@media screen and (max-width: 576px) {
+  footer {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 35%;
+    font-size: 30%;
+    bottom: 0px;
+  }
+}

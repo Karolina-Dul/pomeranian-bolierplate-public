@@ -22,3 +22,9 @@ header .logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+@media screen and (max-width: 576px) {
+  header {
+    padding-left: 0;
+  }
+}

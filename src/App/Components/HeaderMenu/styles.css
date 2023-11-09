@@ -20,10 +20,6 @@ header.header-title {
   font-weight: normal;
 }
 
-/* header .logo {
-
-  } */
-
 header .images-container {
   display: flex;
   align-items: center;
@@ -110,4 +106,20 @@ header .circular_image img {
 .header-hiding-div .header-question .header-button-register {
   color: rgb(254, 55, 86);
   font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    width: 100vw;
+    height: auto;
+  }
+
+  header .logo {
+    height: 10px;
+    pointer-events: none;
+  }
+
+  header .images-container {
+    display: none;
+  }
 }

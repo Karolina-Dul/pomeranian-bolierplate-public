@@ -33,6 +33,11 @@ aside a.active {
   font-weight: 500;
 }
 
+aside button {
+  /* background-color: none; */
+  height: 100px;
+}
+
 .svg-icon {
   filter: invert(0%) sepia(91%) saturate(7463%) hue-rotate(109deg)
     brightness(87%) contrast(100%);
@@ -41,4 +46,47 @@ aside a.active {
 .svg-icon-clicked {
   filter: invert(45%) sepia(69%) saturate(5301%) hue-rotate(329deg)
     brightness(100%) contrast(106%);
+}
+
+.fa-solid {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  display: block;
+  scale: 130%;
+  z-index: 2;
+}
+
+@media screen and (max-width: 576px) {
+  aside {
+    padding: 0;
+  }
+
+  aside nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgb(215, 215, 250);
+    text-align: center;
+  }
+
+  aside nav li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fa-solid {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: block;
+    scale: 130%;
+    z-index: 2;
+    transition-duration: 0.4s;
+  }
+
+  :is(.fa-solid:hover) nav {
+    display: flex;
+  }
 }

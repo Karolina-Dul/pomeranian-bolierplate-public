@@ -33,6 +33,8 @@ export function AppAside() {
   // };
   return (
     <aside>
+      <i className="fa-solid fa-bars"></i>
+
       <nav>
         <ul>
           {links.map((link) => (
