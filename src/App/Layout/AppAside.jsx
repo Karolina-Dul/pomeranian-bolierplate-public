@@ -10,11 +10,13 @@ import { FaqIcon } from '../Components/Icons/FaqIcon';
 import './styles/aside.css';
 import { Folder } from '../Components/Icons/Folder';
 import { User } from '../Components/Icons/User';
+import { useState } from 'react';
 // import { useState } from 'react';
 
 export function AppAside() {
   // const [isTextClicked, setIsTextClicked] = useState(false);
   // const [activeLink, setActiveLink] = useState(1);
+  const [showNavBar, setShowNavBar] = useState(false);
 
   const links = [
     { id: 1, link: 'dashboard', name: 'Dashboard', icon: <HouseIcon /> },
@@ -28,21 +30,29 @@ export function AppAside() {
     { id: 7, link: 'about-me', name: 'O mnie', icon: <User /> },
   ];
 
+  const getMobileNav = () => {
+    setShowNavBar(!showNavBar);
+  };
+
+  const handleLinkClick = () => {
+    setShowNavBar(false);
+  };
   // const handleClick = (linkId) => {
   //   setActiveLink(linkId);
   // };
   return (
     <aside>
-      <i className="fa-solid fa-bars"></i>
+      <button className="fa-solid fa-bars" onClick={getMobileNav}></button>
 
-      <nav>
+      <nav className={`${showNavBar ? 'mobile-navbar' : 'web-bar'}`}>
         <ul>
           {links.map((link) => (
             <li>
               <div
-              // className={
-              //   activeLink === link.id ? 'svg-icon-clicked' : 'svg-icon'
-              // }
+                className="svg-icon"
+                // className={
+                //   activeLink === link.id ? 'svg-icon-clicked' : 'svg-icon'
+                // }
               >
                 {link.icon}
               </div>
@@ -51,6 +61,7 @@ export function AppAside() {
                 // onClick={() => handleClick(link.id)}
                 to={link.link}
                 style={{ textTransform: 'capitalize' }}
+                onClick={handleLinkClick}
               >
                 {link.name}
               </NavLink>

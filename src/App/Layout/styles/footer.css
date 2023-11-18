@@ -31,9 +31,19 @@ footer a {
   footer {
     display: flex;
     position: relative;
-    width: 100vw;
+    /* width: 100vw; */
     height: 35%;
-    font-size: 30%;
+    font-size: 70%;
     bottom: 0px;
+    flex-direction: column;
+  }
+
+  footer a,
+  footer > div {
+    text-align: left;
+  }
+
+  footer > div {
+    flex-direction: column;
   }
 }
