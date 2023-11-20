@@ -44,7 +44,7 @@ export function AppAside() {
     <aside>
       <button className="fa-solid fa-bars" onClick={getMobileNav}></button>
 
-      <nav className={`${showNavBar ? 'mobile-navbar' : 'web-bar'}`}>
+      <nav className={`${showNavBar ? 'mobile-navbar' : ''}`}>
         <ul>
           {links.map((link) => (
             <li>
