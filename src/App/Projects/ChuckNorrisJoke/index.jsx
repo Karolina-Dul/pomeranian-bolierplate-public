@@ -27,7 +27,11 @@ const ChuckNorrisJoke = () => {
       </div>
       <h1>Losowy żart Chucka Norrisa</h1>
       <div className="chuck-norris-container">
-        <img className="chuck-norris-photo" src={chuckNorris} />
+        <img
+          className="chuck-norris-photo"
+          src={chuckNorris}
+          alt="Chuck Norris"
+        />
         <div className="date-joke-button-container">
           <p className="date">{`Current date: ${day}-${month}-${year}`}</p>
           <ChuckNorrisJokeApp joke={joke} setJoke={setJoke} count={count} />

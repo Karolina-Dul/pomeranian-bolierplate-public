@@ -1,9 +1,9 @@
 aside {
   border-right: 1px solid var(--color-grey);
   padding: 2rem 0.7rem 0.7rem 0.7rem;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
   overflow-y: auto;
 }
 
@@ -28,12 +28,14 @@ aside li a {
 }
 
 aside a.active {
-  /* background-color: var(--color-primary-blue); */
   color: #fe3756;
   font-weight: 500;
 }
 
-.svg-icon {
+.fa-solid {
+  display: none;
+}
+/* .svg-icon {
   filter: invert(0%) sepia(91%) saturate(7463%) hue-rotate(109deg)
     brightness(87%) contrast(100%);
 }
@@ -41,4 +43,54 @@ aside a.active {
 .svg-icon-clicked {
   filter: invert(45%) sepia(69%) saturate(5301%) hue-rotate(329deg)
     brightness(100%) contrast(106%);
+} */
+
+@media screen and (max-width: 576px) {
+  aside {
+    padding: 0;
+  }
+
+  aside nav {
+    display: none;
+  }
+
+  aside nav li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fa-solid {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    scale: 130%;
+    z-index: 2;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .mobile-navbar {
+    display: block;
+    width: 100%;
+    height: 90svh;
+    background-color: var(--color-red);
+    position: absolute;
+    left: 0px;
+    z-index: 4;
+  }
+
+  aside li a,
+  aside a.active {
+    color: white;
+    font-weight: 400;
+  }
+
+  .svg-icon {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7495%)
+      hue-rotate(150deg) brightness(103%) contrast(93%);
+  }
 }
