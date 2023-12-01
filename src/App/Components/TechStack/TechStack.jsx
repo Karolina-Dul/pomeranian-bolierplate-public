@@ -13,11 +13,16 @@ import bitbucket from '../../Images/tech-stack/bitbucket.svg';
 import css from '../../Images/tech-stack/css.svg';
 import firebase from '../../Images/tech-stack/firebase-svgrepo-com 1.svg';
 import git from '../../Images/tech-stack/git.svg';
+import { Link } from 'react-router-dom';
 
 export const TechStack = () => {
   return (
     <div>
-      <h2>&lt; TECHSTACK</h2>
+      {/* <h2>&lt; TECHSTACK</h2> */}
+      <div className="page-path">
+        <Link to="/dashboard">Strona główna</Link>
+        <p>&nbsp;&gt;&nbsp;Tech-Stack</p>
+      </div>
       <p>
         Poniżej znajdziesz tech stack oraz narzędzia, jakich nauczyłem sie
         podczas kursu

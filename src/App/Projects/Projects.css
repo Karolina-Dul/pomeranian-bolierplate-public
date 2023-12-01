@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-right: 5rem;
 }
 
 .projects-tiles > div {
@@ -53,4 +52,10 @@
 .project-tile-image {
   margin-top: 5%;
   transform: scale(1.5);
+}
+
+@media screen and (max-width: 576px) {
+  .projects-tiles {
+    padding-right: 0rem;
+  }
 }
