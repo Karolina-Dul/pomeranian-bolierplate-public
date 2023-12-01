@@ -18,3 +18,13 @@
 .skill-button:hover {
   background-color: var(--color-red);
 }
+
+@media screen and (max-width: 576px) {
+  h3 {
+    text-align: center;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+}
