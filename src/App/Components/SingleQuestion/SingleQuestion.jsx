@@ -6,7 +6,7 @@ export const FaqQuestions = (props) => {
   const { question, answer } = props;
 
   const [isQuestionClicked, setQuestionClicked] = useState(false);
-  const [arrowDown, setArrowDown] = useState(false);
+  // const [arrowDown, setArrowDown] = useState(false);
 
   // const ifArrow = ({ active, <Arrow/> }) => (
   //   <div className={`banner ${active ? "active" : "inactive"}`}>{}</div>
@@ -26,12 +26,17 @@ export const FaqQuestions = (props) => {
 
   return (
     <div className="border-open">
-      <button className="inactiveArrow">
-        <Arrow />
-      </button>
-      <button className="question" onClick={clickAnswer}>
-        {question}
-      </button>
+      <div className="arrow-question-container">
+        <button
+          className={`${isQuestionClicked ? 'activeArrow' : 'inactiveArrow'}`}
+          onClick={clickAnswer}
+        >
+          <Arrow />
+        </button>
+        <button className="question" onClick={clickAnswer}>
+          {question}
+        </button>
+      </div>
       <hr className="line" />
       {isQuestionClicked && <p className="answer">{answer}</p>}
     </div>
