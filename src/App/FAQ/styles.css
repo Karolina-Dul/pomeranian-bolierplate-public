@@ -1,81 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-.dashboard .page-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 34px;
+.dashboard-faq .introduction {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
 }
-
-.dashboard .introduction {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27px;
-}
-
-/* .dashboard .question::before {
-    margin-right: 0.7em;
-    content: url('../Images/strzalka.svg');
-    transform: rotate(45deg);
-} */
 
 .inactiveArrow {
-    transform: rotate(-90deg);
-    border: none;
-    background-color: inherit;
+  transform: rotate(-90deg);
+  border: none;
+  background-color: inherit;
 }
 
 .activeArrow {
-    border: none;
-    background-color: inherit;
+  border: none;
+  background-color: inherit;
 }
 
-
-.dashboard .question {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 34px;
-    border: none;
-    background-color: inherit;
+.dashboard-faq .question {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(0.9rem, 0.7vw + 0.5rem, 1.125rem);
+  line-height: 24px;
+  border: none;
+  background-color: inherit;
+  text-align: left;
 }
 
-.dashboard .answer {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
+.dashboard-faq .answer {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: clamp(0.9rem, 0.7vw + 0.5rem, 1.125rem);
+
+  line-height: clamp(1.7rem, 2vw + 1rem, 2rem);
 }
 
-.dashboard .border-open {
-    width: 40vw;
-    margin: 2em 0em;
-    box-sizing: border-box;
-    padding: 18px 24px;
-    background-color: #FFFFFF;
-    border-left: 5px solid #C8CBD1;
-    border-radius: 8px;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.07)) drop-shadow(0px 3px 46px rgba(0, 0, 0, 0.06));
+.dashboard-faq .border-open {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: 2em 0em;
+  box-sizing: border-box;
+  padding: 18px 24px;
+  background-color: #ffffff;
+  border-left: 5px solid #c8cbd1;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.07))
+    drop-shadow(0px 3px 46px rgba(0, 0, 0, 0.06));
 }
 
-.dashboard .border-close {
-    width: 40vw;
-    margin: 2em 0em;
-    box-sizing: border-box;
-    padding: 18px 24px;
-    background-color: #FFFFFF;
-    border-left: 5px solid #C8CBD1;
-    border-radius: 8px;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.07)) drop-shadow(0px 3px 46px rgba(0, 0, 0, 0.06));
+.dashboard-faq .arrow-question-container {
+  display: flex;
+  flex-direction: row;
 }
 
-.dashboard .line {
-    width: 36vw;
-    border: 1px solid #EBEBEB;
+.dashboard-faq .line {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  margin: 15px 0px 0px;
+}
+
+@media screen and (max-width: 848px) {
+}
+@media screen and (max-width: 576px) {
+  .dashboard-faq .border-open {
+    width: 100%;
+  }
+
+  .dashboard-faq .question {
+    /* font-size: calc(1rem, 20vw, 1.125rem); */
+  }
 }

@@ -45,7 +45,7 @@ aside a.active {
     brightness(100%) contrast(106%);
 } */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
   aside {
     padding: 0;
   }

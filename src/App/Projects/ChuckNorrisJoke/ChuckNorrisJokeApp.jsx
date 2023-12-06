@@ -13,7 +13,7 @@ const ChuckNorrisJokeApp = ({ joke, setJoke, count }) => {
           },
         });
 
-        if (!response.ok) throw Error('Cos=ś poszło nie tak');
+        if (!response.ok) throw Error('Coś poszło nie tak');
         const data = await response.json();
         setJoke(data.value);
         console.log(data.value);

@@ -40,7 +40,7 @@ export function App() {
           />
           <Route path="tech-stack*" element={<TechStack />} />
           <Route path="faq/*" element={<FaQ />} />
-          <Route path="about-me/*" element={<FaQ />} />
+          {/* <Route path="about-me/*" element={<FaQ />} /> */}
           {/* <Route path="calendar/*" element={<Calendar />} />
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="settings/*" element={<Settings />} /> */}

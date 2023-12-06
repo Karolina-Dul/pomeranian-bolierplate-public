@@ -27,7 +27,7 @@ export function AppAside() {
     { id: 5, link: 'tech-stack', name: 'Tech-stack', icon: <SettingIcon /> },
     { id: 6, link: 'faq', name: 'FaQ', icon: <FaqIcon /> },
     // { id: 6, link: 'settings', name: '', icon: <SettingIcon /> },
-    { id: 7, link: 'about-me', name: 'O mnie', icon: <User /> },
+    // { id: 7, link: 'about-me', name: 'O mnie', icon: <User /> },
   ];
 
   const getMobileNav = () => {
