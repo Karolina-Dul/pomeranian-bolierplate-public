@@ -1,7 +1,5 @@
 import './styles.css';
 import React, { useState } from 'react';
-
-import { SettingIcon } from '../../Components/Icons/SettingIcon';
 import { MenuArrow } from '../Icons/MenuArrow';
 import { RightCornerMenuPop } from '../RightCornerMenuPop/RightCornerMenuPop';
 import Zdj_CV from '../../Images/Zdj_CV.jpg';
@@ -14,7 +12,6 @@ export const HeaderMenu = () => {
   }
   return (
     <div className="images-container">
-      <SettingIcon />
       <div className="circular_image">
         <img src={Zdj_CV} alt="Zdjęcie do CV" />
       </div>

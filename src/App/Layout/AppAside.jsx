@@ -37,14 +37,12 @@ export function AppAside() {
   const handleLinkClick = () => {
     setShowNavBar(false);
   };
-  // const handleClick = (linkId) => {
-  //   setActiveLink(linkId);
-  // };
+
   return (
     <aside>
       <button className="fa-solid fa-bars" onClick={getMobileNav}></button>
 
-      <nav className={`${showNavBar ? 'mobile-navbar' : ''}`}>
+      <nav className={`${showNavBar ? 'mobile-navbar' : 'mobile-navbar-hide'}`}>
         <ul>
           {links.map((link) => (
             <li>

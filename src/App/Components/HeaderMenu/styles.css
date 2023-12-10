@@ -74,16 +74,19 @@ header .circular_image img {
   position: absolute;
   top: 75px;
   right: 50px;
-  width: 18vw;
-  height: 13vh;
+  width: 15rem;
+  height: 6rem;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(169, 169, 169);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header-hiding-div .header-button-log-in {
   margin: 3vh 3vw 0;
-  width: 12vw;
+  width: 8rem;
   height: 5vh;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
