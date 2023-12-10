@@ -5,6 +5,7 @@ import { ReactComponent as Folder } from '../../Images/tiles/folder-2.svg';
 import { ReactComponent as StatusUp } from '../../Images/tiles/status-up.svg';
 import { ReactComponent as Teacher } from '../../Images/tiles/teacher.svg';
 import { ReactComponent as Hand } from '../../Images/waving-hand.svg';
+import { ReactComponent as FAQ } from '../../Images/faq.svg';
 
 import { Link } from 'react-router-dom';
 
@@ -30,16 +31,6 @@ export const Blocks = () => {
           <Link to="/cv">Zobacz więcej</Link>
         </div>
         <div>
-          <p className="dashboard-tile-title">Projekty</p>
-          <div className="dashboard-tile-image">
-            <Folder />
-          </div>
-          <p className="dashboard-tile-description">
-            wszystkie zrealizowane projekty
-          </p>
-          <Link to="/projects">Zobacz więcej</Link>
-        </div>
-        <div>
           <p className="dashboard-tile-title">Ćwiczenia</p>
           <div className="dashboard-tile-image">
             <Edit />
@@ -50,13 +41,23 @@ export const Blocks = () => {
           <Link to="/exercises">Zobacz więcej</Link>
         </div>
         <div>
+          <p className="dashboard-tile-title">Projekty</p>
+          <div className="dashboard-tile-image">
+            <Folder />
+          </div>
+          <p className="dashboard-tile-description">
+            wszystkie zrealizowane projekty
+          </p>
+          <Link to="/projects">Zobacz więcej</Link>
+        </div>
+        {/* <div>
           <p className="dashboard-tile-title">Edukacja</p>
           <div className="dashboard-tile-image">
             <Teacher />
           </div>
           <p className="dashboard-tile-description">moja ścieżka edukacji</p>
           <Link to="/dashboard/tech-stack">Zobacz więcej</Link>
-        </div>
+        </div> */}
         <div>
           <p className="dashboard-tile-title">Tech stack</p>
           <div className="dashboard-tile-image">
@@ -69,14 +70,12 @@ export const Blocks = () => {
           {/* <SeeMoreLink to="tech-stack" /> */}
         </div>
         <div>
-          <p className="dashboard-tile-title">Doświadczenie</p>
+          <p className="dashboard-tile-title">FAQ</p>
           <div className="dashboard-tile-image">
-            <StatusUp />
+            <FAQ />
           </div>
-          <p className="dashboard-tile-description">
-            moje dotychczasowe doświadczenie
-          </p>
-          <Link to="/dashboard/tech-stack">Zobacz więcej</Link>
+          <p className="dashboard-tile-description">Często zadawane pytania</p>
+          <Link to="/faq/*">Zobacz więcej</Link>
         </div>
       </div>
     </div>
